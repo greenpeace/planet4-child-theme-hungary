@@ -12,4 +12,285 @@ Tags: light, accessibility-ready
 Text Domain: planet4-child-theme-hungary
 */
 
-@import 'css/cards.css';
+
+.timelinecontainer {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item p {
+  font-size: 1rem;
+}
+
+.timeline-item::after {
+  width: 30px;
+  height: 30px;
+  display: block;
+  top: 1.5em;
+  position: absolute;
+  left: -16px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+.year {
+  position: absolute;
+  left: 0.7em;
+  font-weight: bold;
+  top: 0em;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.position {
+  font-size: 1.1rem; color: #737373;
+}
+
+.rounded-organic {
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin-bottom: 1.4em;
+}
+
+.map-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.socialbuttons .fab {
+  padding: 13px;
+  width: 70px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.socialbuttons .fab:hover {
+  opacity: 0.7;
+}
+
+.socialbuttons .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.socialbuttons .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.socialbuttons .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.socialbuttons .fa-instagram {
+  background: #bc2a8d;
+  color: white;
+}
+
+.socialbuttons .fa-flickr {
+  background: #0063dc;
+  color: white;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.keretes, .frame {
+  padding: 1.5em;
+  background-color: #e6e6e6;
+  margin-bottom: 1em;
+  border: 1px solid #a6a6a6;
+}
+
+@media (min-width: 1200px) {
+  .happy-point-block-wrap .happy-point {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .happy-point-block-wrap .happy-point {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .happy-point-block-wrap .happy-point {
+    padding-top: 10px;
+  }
+}
+
+.happy-point-block-wrap {
+  height: 500px;
+}
+
+@media (max-width: 576px) {
+  .happy-point-block-wrap .happy-point iframe {
+    position: relative;
+    min-height: 500px;
+  }
+}
+
+.happy-point-block-wrap .happy-point iframe {
+  height: 500px;
+}
+
+.btn-action {
+  background-color: rgba(238,86,45,.4);
+}
+
+.sidebar-hu {
+  box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.3);
+  padding: 5%;
+  background-color: #f2f2f2;
+  margin-bottom: 25px;
+}
+
+.sidebar-hu-dots {
+  border-top: 2px dotted #000;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .page-id-3110, .page-id-4200 .page-header .container>:not(.row) {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .width-65 {max-width: 65%;}
+}
+
+.tag-beke .article-list-item:first-of-type {
+  display: none !important;
+}
+
+@media (min-width: 1200px) {
+  .page-id-4200 .page-header {
+    padding: 144px 0 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-id-4200 .page-header {
+    padding: 144px 0 20px;
+  }
+}
+
+.top-page-tags a[href*="invisible"] {
+  display: none;
+}
+
+.carousel-indicators li {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  .lead {
+    max-width: 100%;
+    font-size: 1.1rem;
+    line-height:1.4;
+  }
+}
+
+.happy-point-block-wrap .happy-point {
+  overflow-y: hidden;
+}
+
+.accordion-text {
+  padding-top:1em;
+}
