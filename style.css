@@ -294,3 +294,8 @@ Text Domain: planet4-child-theme-hungary
 .accordion-text {
   padding-top:1em;
 }
+
+/*Change font size below 500px*/
+@media only screen and (max-width: 500px) {
+  .gphu-smaller-headline-below-500px h2{font-size:2em;}
+}
