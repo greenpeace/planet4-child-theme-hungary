@@ -294,6 +294,7 @@ Text Domain: planet4-child-theme-hungary
 .accordion-text {
   padding-top:1em;
 }
+
 /*Tax 1 page - layout for 2025 start*/
 .page-id-820 #gp-ado-copy-div {
     text-align: center;
@@ -334,3 +335,10 @@ Text Domain: planet4-child-theme-hungary
     visibility: visible;
 }
 /*Tax 1 page - layout for 2025 end*/
+=======
+
+/*Change font size below 500px*/
+@media only screen and (max-width: 500px) {
+  .gphu-smaller-headline-below-500px h2{font-size:2em;}
+}
+
