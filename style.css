@@ -295,7 +295,50 @@ Text Domain: planet4-child-theme-hungary
   padding-top:1em;
 }
 
+/*Tax 1 page - layout for 2025 start*/
+.page-id-820 #gp-ado-copy-div {
+    text-align: center;
+}
+.page-id-820 .gp-ado-1-accordion .panel {
+    background: var(--wp--preset--color--beige-100) !important;
+}
+.page-id-820 .gp-ado-1-beige-column,
+.page-id-820 .gp-ado-1-contact-column {
+    padding: 0px !important;
+}
+.page-id-820 .gp-ado-1-beige-column p,
+.page-id-820 .gp-ado-1-contact-column p {
+    padding: 10px;
+}
+.page-id-820 .carousel-captions-wrapper {
+    padding: 10px;
+}
+@media only screen and (max-width: 992px) {
+    .page-id-820 .gp-ado-1-column {
+        padding: 10px;
+    }
+}
+
+.page-id-820 #gp-tax-number-sticky-button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0; /* Hidden initially */
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1000; /* Keep it above other elements */
+}
+
+.page-id-820 #gp-tax-number-sticky-button.visible {
+    opacity: 1;
+    visibility: visible;
+}
+/*Tax 1 page - layout for 2025 end*/
+=======
+
 /*Change font size below 500px*/
 @media only screen and (max-width: 500px) {
   .gphu-smaller-headline-below-500px h2{font-size:2em;}
 }
+
